@@ -1,0 +1,73 @@
+# Based on https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  #Run on each push
+  push:
+    branches:
+      - main
+
+  # Allow manual running of workflow
+  workflow_dispatch:
+
+# Set token permissions
+permissions:
+  id-token: write
+  contents: read
+  pages: write
+
+# Skip any queued runs except currently building one if a new push happens while building
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Use Bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build Job using ubuntu, as this makes installing hugo snap easy
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo
+        run: sudo snap install hugo
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+# This next section is commented out since I have no need of Node.js with the current site, however it can be re-enabled if needed lte
+#      - name: Install Node.js dependencies
+#        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build Hugo Site
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: Etc/TUC
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .public
+
+# Deployment
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
