@@ -1,1 +1,4 @@
-+++title='Posts' outputs = ['html','rss']+++
++++
+title='Posts'
+outputs = ['html','rss']
++++
