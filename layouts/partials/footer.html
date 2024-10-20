@@ -1,0 +1,23 @@
+{{ $showFooter := default true .Site.Params.showFooter }}
+{{ if $showFooter }}
+    {{ if not .Site.Params.footerContent }}
+    <p>Create using:
+        <a href="https://gohugo.io/">Hugo</a>
+        and the 
+        <a href="https://github.com/tomfran/typo">Typo theme.</a>
+        You can find more of me at my
+        <a href="https://github.com/CalumDay">GitHub</a>
+        and
+        <a href="https://infosec.exchange/@calumday">Mastodon</a>
+        pages.
+    </p>
+    {{ end }}
+    
+    {{ with .Site.Params.footerContent }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+{{ end }}
+
+{{ if .Param "math" }}
+{{ partialCached "math.html" . }}
+{{ end }}

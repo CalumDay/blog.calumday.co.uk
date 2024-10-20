@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Calum Day</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Calum Day</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2024 17:40:39 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/posts/24-10-20-hello/</link>
+      <pubDate>Sun, 20 Oct 2024 17:40:39 +0100</pubDate>
+      <guid>http://localhost:1313/posts/24-10-20-hello/</guid>
+      <description>&lt;p&gt;Hello to anyone reading this, I&amp;rsquo;m Calum. This is the new home for my projects, ramblings, and other nonsense on the web.&lt;/p&gt;&#xA;&lt;p&gt;I was inspired to start this as a way of recording what I&amp;rsquo;ve been up to, what I&amp;rsquo;m thinking about, and to highlight any other projects I find interesting. The thing that finally gave me the push to actually do it was seeing &lt;a href=&#34;https://infosec.exchange/@alexhaydock&#34;&gt;Alex Haydock&lt;/a&gt; start their own &lt;a href=&#34;https://blog.infected.systems&#34;&gt;blog&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-this-site&#34;&gt;Why this site?&lt;/h3&gt;&#xA;&lt;p&gt;So why start a personal blog instead of utilising one of the centralised alternatives? Predominantly, I&amp;rsquo;ve watched many communities come and go as funding dries up, or a new owner decides they know best. I wanted a place that was a place just for me, where I could post whatever I felt like posting, and not have to worry about content disappearing or the site its on becoming the plaything of some billionaire. Enter the &lt;a href=&#34;https://indieweb.org&#34;&gt;IndieWeb&lt;/a&gt;. I&amp;rsquo;ve watched the rise of the &lt;a href=&#34;https://fediverse.to&#34;&gt;Fediverse&lt;/a&gt; and am a big fan of the decentralised web. I&amp;rsquo;ve seen how it allows people to own what they post, helps prevent one individual or group from dominating conversations, helps to keep users safe from abuse, and allows people to engage in a more open and collaborative way with both their own communities, and the wider web.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Oct 2024 17:31:07 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Calum, welcome to my new home on the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently finishing a PhD in Physical Chemistry, studying aerosol hygroscopic growth and its implications for the environment, as well as human health and inhaled drug delivery.&lt;/p&gt;&#xA;&lt;p&gt;This is where you&amp;rsquo;ll find posts about my ongoing projects, and any other topics I find interesing.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+baseURL = 'https://blog.calumday.co.uk'
+languageCode = 'en-us'
+title = 'Calum Day'
+theme = 'typo'
+
+[taxonomies]
+  tag = 'tags'
+
+[params]
+  description = 'Personal blog of Calum Day'
+  dateFmt = '2006-01-02 15:04'
+
+# Global Appearence Settings
+  theme = 'auto'
+  colorPalette = 'default'
+  hideHeader = false
+
+# Main Page Intro, content uses markdown
+  homeIntroTitle = 'Welcome'
+  homeIntroContent = """
+This blog is predominantly a place for me to post my ongoing projects, and perhaps some other posts discussing whatever I find interesting.
+"""
+
+# Set which collection to display on home
+  homeCollectionTitle = 'Posts'
+  homeCollection = 'posts'
+
+# Set list parameters
+  paginationSize = 100
+  listSummaries = true
+  listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+  breadcrumbs = true
+
+# Set Social Icons
+  [[params.social]]
+    name = 'github'
+    url = 'https://github.com/CalumDay'
+
+  [[params.social]]
+    name = 'mastodon'
+    url = 'https://infosec.exchange/@calumday'
+
+# Set Main Menu Pages
+  [[params.menu]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[params.menu]]
+    name = 'Posts'
+    url = '/posts'
+    weight = 2
+
+  [[params.menu]]
+    name = 'About'
+    url = '/about'
+    weight = 3
+
+# Customise Footer ## not needed as footer is customised by placing replacement footer in layouts/partials/footer.html
+#  showFooter = true
+#  footerContent
+
+# Enable and format syntax highlighting
+[markup]
+  [markup.highlight]
+    style = 'algol'
