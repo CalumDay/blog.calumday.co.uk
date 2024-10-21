@@ -4,6 +4,7 @@ title = 'Calum Day'
 theme = 'typo'
 
 [taxonomies]
+  category = 'categories'
   tag = 'tags'
 
 [params]
@@ -56,6 +57,11 @@ This blog is predominantly a place for me to post my ongoing projects, and perha
   [[params.menu]]
     name = 'About'
     url = '/about'
+    weight = 99
+
+  [[params.menu]]
+    name = 'Tags'
+    url = '/tags'
     weight = 3
 
 # Customise Footer ## not needed as footer is customised by placing replacement footer in layouts/partials/footer.html
