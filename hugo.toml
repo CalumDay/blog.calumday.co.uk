@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'Calum Day'
 theme = 'typo'
 
+[outputs]
+  home = ['html']
+  about = ['html']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
 [taxonomies]
   category = 'categories'
   tag = 'tags'
