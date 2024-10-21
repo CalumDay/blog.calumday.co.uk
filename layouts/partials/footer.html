@@ -1,15 +1,18 @@
 {{ $showFooter := default true .Site.Params.showFooter }}
 {{ if $showFooter }}
     {{ if not .Site.Params.footerContent }}
-    <p>Create using:
-        <a href="https://gohugo.io/">Hugo</a>
-        and the 
-        <a href="https://github.com/tomfran/typo">Typo theme.</a>
-        You can find more of me at my
+    <p style="text-align: center">You can find more of me at my
         <a href="https://github.com/CalumDay">GitHub</a>
         and
         <a rel="me" href="https://infosec.exchange/@calumday">Mastodon</a>
-        pages.
+        pages<br />
+        You can subscribe to updates by adding
+        <a href="https://blog.calumday.co.uk/posts/index.xml">this link</a>
+        to your RSS reader<br />    
+        Created using:
+        <a href="https://gohugo.io/">Hugo</a>
+        and the 
+        <a href="https://github.com/tomfran/typo">Typo theme</a>
     </p>
     {{ end }}
     
