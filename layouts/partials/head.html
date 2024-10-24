@@ -3,12 +3,12 @@
 
 {{ $faviconPath := (.Site.Params.faviconPath | default "" | absURL) }}
 
-<link rel="icon" type="image/png" href="/{{ $faviconPath }}/favicon-48x48.png" sizes="48x48" />
-<link rel="icon" type="image/svg+xml" href="/{{ $faviconPath }}/favicon.svg" />
-<link rel="shortcut icon" href="/{{ $faviconPath }}/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/{{ $faviconPath }}/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="CDay Blog" />
-<link rel="manifest" href="/{{ $faviconPath }}/site.webmanifest" />
+<link rel="icon" type="image/ico" href="{{ $faviconPath }}/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ $faviconPath }}/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ $faviconPath }}/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ $faviconPath }}/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ $faviconPath }}/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $faviconPath }}/apple-touch-icon.png">
 
 {{ with .OutputFormats.Get "rss" -}}
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
