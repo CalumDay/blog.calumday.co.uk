@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+{{ $faviconPath := (.Site.Params.faviconPath | default "" | absURL) }}
+
+<link rel="icon" type="image/png" href="/{{ $faviconPath }}/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/{{ $faviconPath }}/favicon.svg" />
+<link rel="shortcut icon" href="/{{ $faviconPath }}/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/{{ $faviconPath }}/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="CDay Blog" />
+<link rel="manifest" href="/{{ $faviconPath }}/site.webmanifest" />
+
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+{{- if .IsHome -}}
+<meta name="description" content="{{ site.Params.Description }}"/>
+{{- else -}}
+<meta name="description" content="{{ .Params.Description }}"/>
+{{- end }}
+
+<title>
+    {{ if .IsHome }}
+    {{ site.Title }}
+    {{ else }}
+    {{ printf "%s | %s" .Title site.Title }}
+    {{ end }}
+</title>
+
+<link rel="canonical" href="{{ .Permalink }}"/>
+
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+
+{{ if hugo.IsProduction }}
+{{ template "_internal/google_analytics.html" . }}
+
+{{ if .Site.Params.umami.enable }}
+{{ partial "umami.html" . }}
+{{ end }}
+{{ end }}
+
