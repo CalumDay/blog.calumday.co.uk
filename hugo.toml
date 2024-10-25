@@ -4,10 +4,10 @@ title = 'Calum Day'
 theme = 'typo'
 
 [outputs]
-  home = ['html', 'rss']
+  home = ['html']
   section = ['html', 'rss']
-  taxonomy = ['html', 'rss']
-  term = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
 
 [taxonomies]
   category = 'categories'
