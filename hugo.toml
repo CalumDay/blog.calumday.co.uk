@@ -61,14 +61,19 @@ This blog is predominantly a place for me to post my ongoing projects, and perha
     weight = 2
 
   [[params.menu]]
-    name = 'About'
-    url = '/about'
-    weight = 99
+    name = 'Blogroll'
+    url = '/blogroll'
+    weight = 3
 
   [[params.menu]]
     name = 'Tags'
     url = '/tags'
-    weight = 3
+    weight = 4
+
+  [[params.menu]]
+    name = 'About'
+    url = '/about'
+    weight = 99
 
 # Customise Footer ## not needed as footer is customised by placing replacement footer in layouts/partials/footer.html
 #  showFooter = true
