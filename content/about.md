@@ -1,7 +1,15 @@
 +++
-date = '2024-10-20T17:31:07+01:00'
+date = "2024-10-20T17:31:07+01:00"
 draft = false
-title = 'About'
+title = "About"
+toc = false
+autonumber = false
+math = false
+hideBackToTop = false
+hidePagination = true
+showTags = false
+fmContentType = "Typo Post"
+slug = ""
 +++
 
 I'm Calum, welcome to my new home on the [IndieWeb](https://indieweb.org/).
