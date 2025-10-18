@@ -46,7 +46,7 @@ In the previous part of this series, we described the hardware I use in my own s
 
 ### Disk Counts and Redundancy
 
-Starting with the most basic setup, a single drive, you will lack the resiliency of redundant multi-disc arrays, but it wil be the ost cost effective solution. If your data doesn't matter, and the loss of this copy will be a non-issue, this is probably the choice for you. You will be able to use all the storage you pay for.
+Starting with the most basic setup, a single drive, you will lack the resiliency of redundant multi-disc arrays, but it wil be the most cost effective solution. If your data doesn't matter, and the loss of this copy will be a non-issue, this is probably the choice for you. You will be able to use all the storage you pay for.
 
 Adding a second drive will allow you to create a 2 drive array. Here you have a choice. You can have more capacity and faster transfer speeds, or data redundancy. By opting for a striped array, you are choosing to split each file into two, and storing half on each drive. A single drive failur will cost you all your data. Alteratively, selecting a mirrored array creates a complete copy of the data on both drives. As a result, your storage capacity will be limited to the capacity of the smallest disk in the array. The upside is one drive can fail without any risk of data loss. The downside is its double the cost for the same capacity as a single drive.
 
