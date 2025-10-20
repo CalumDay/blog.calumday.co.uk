@@ -15,3 +15,6 @@ hugo.linux
 # FrontMatter Files
 /.frontmatter/
 frontmatter.json
+
+#VSCode Files
+/.vscode/settings.json
