@@ -3,7 +3,7 @@ title: Using Proxmox as a Home Server Part III - NAS Connections
 description: In part 3 of this series, we will discuss how to connect a range of devices to out SSHFS NAS.
 date: 2025-10-26T16:51:57.955Z
 preview: /media/posts/pve-rack/Drive_Cables.jpg
-draft: true
+draft: false
 tags:
     - Guide
     - Network
