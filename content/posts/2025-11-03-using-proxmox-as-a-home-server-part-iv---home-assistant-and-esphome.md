@@ -3,7 +3,7 @@ title: Using Proxmox as a Home Server Part IV - HASS and ESPHome
 description: This installment will focus on installing and configuring Home Assistant and ESPHome in a Fedora LXC container using docker-compose.
 date: 2025-10-26T20:25:44.671Z
 preview: /media/posts/pve-rack/Drive_Cables.jpg
-draft: true
+draft: false
 tags:
   - Guide
   - Network
