@@ -62,7 +62,7 @@ Once in the shell, we need to edit a few files. Handily, PVE comes with Nano to 
 
 First, we edit the proxmox.sources file using:
 ```sh
-nano /etc/apt/sources.list.d/proxmox.services
+nano /etc/apt/sources.list.d/proxmox.sources
 ```
 
 We need to modify this file so it looks like the one below:
